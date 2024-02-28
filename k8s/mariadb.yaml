@@ -63,3 +63,4 @@ spec:
     app: mariadb
   ports:
     - port: 3306
+        
