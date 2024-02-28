@@ -6,11 +6,6 @@ FLUSH PRIVILEGES;
 
 USE `yomangjin` ;
 
--- ---------------------
-###############################
-# 앙나나ㅏ나ㅏㅏ
--- Table `yomangjin`.`tour`
-################################
 
 CREATE TABLE IF NOT EXISTS `yomangjin`.`tour` (
   `id` INT NOT NULL AUTO_INCREMENT,
