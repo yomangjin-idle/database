@@ -4,11 +4,8 @@ GRANT ALL ON *.* TO 'root'@'localhost' IDENTIFIED BY 'root' WITH GRANT OPTION;
 GRANT ALL ON yomangjin.* TO 'root'@'localhost';
 FLUSH PRIVILEGES;
 
-USE `yomangjin` ;
+USE `yomangjin`;
 
--- -----------------------------------------------------
--- Table `yomangjin`.`tour`
--- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `yomangjin`.`tour` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `address` VARCHAR(255) COLLATE 'utf8mb3_bin' NULL DEFAULT NULL,
@@ -18,12 +15,9 @@ CREATE TABLE IF NOT EXISTS `yomangjin`.`tour` (
   `x` DOUBLE NULL DEFAULT NULL,
   `y` DOUBLE NULL DEFAULT NULL,
   PRIMARY KEY (`id`))
-ENGINE = InnoDB
+ENGINE = InnoDB;
 
 
--- -----------------------------------------------------
--- Table `yomangjin`.`image`
--- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `yomangjin`.`image` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `content` VARCHAR(511) COLLATE 'utf8mb3_bin' NULL DEFAULT NULL,
@@ -37,9 +31,6 @@ CREATE TABLE IF NOT EXISTS `yomangjin`.`image` (
 ENGINE = InnoDB;
 
 
--- -----------------------------------------------------
--- Table `yomangjin`.`near_tour`
--- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `yomangjin`.`near_tour` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `address` VARCHAR(255) COLLATE 'utf8mb3_bin' NULL DEFAULT NULL,
@@ -55,9 +46,6 @@ CREATE TABLE IF NOT EXISTS `yomangjin`.`near_tour` (
 ENGINE = InnoDB;
 
 
--- -----------------------------------------------------
--- Table `yomangjin`.`speak_file`
--- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `yomangjin`.`speak_file` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `file_path` VARCHAR(255) COLLATE 'utf8mb3_bin' NULL DEFAULT NULL,
