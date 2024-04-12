@@ -15,22 +15,12 @@ spec:
       containers:
         - name: backend
           # 여러분의 backend image 주소를 입력해주세요.
-          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_6d184c068351
+          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_d02412a137a8
           env:
             - name: TZ
               value: Asia/Seoul
             - name: DATABASE_URL
-              value: jdbc:mariadb://mariadb.default.svc.cluster.local:3306
-            - name: CLIENT_ID
-              valueFrom:
-                configMapKeyRef:
-                  name: app-cfg
-                  key: CLIENT_ID
-            - name: CLIENT_KEY
-              valueFrom:
-                configMapKeyRef:
-                  name: app-cfg
-                  key: CLIENT_KEY
+              value: jdbc:mariadb://mariadb:3306/krampoline
           resources:
             requests:
               memory: 1Gi
